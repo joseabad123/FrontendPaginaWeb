@@ -137,6 +137,7 @@ background: rgb(7, 51, 87)}
 .box-departamento {
   padding: 40px 20px;
   border: 3px solid rgba(255,255,255, .2);
+  border-radius: 3%;
 }
 
 .titulo4 {
