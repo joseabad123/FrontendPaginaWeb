@@ -46,10 +46,15 @@
               <ng-container *ngFor="let mensaje of listMessage;  let i=index"> 
             <!--  src="https://scontent.fgye8-1.fna.fbcdn.net/v/t1.0-0/p640x640/51582920_10157224767420921_8108694604678692864_o.png?_nc_cat=107&_nc_ohc=7A_HolKMm_8AX8DIegt&_nc_ht=scontent.fgye8-1.fna&oh=633648d1a2739a10bbc2cb20116241bf&oe=5EC89BC1"
                   alt="Random third slide" /> <ng-template ngbSlide *ngIf="i<3">-->
+<!--                  src="https://scontent.fgye8-1.fna.fbcdn.net/v/t1.0-0/p180x540/67834871_10157647021680921_8007173122673344512_o.jpg?_nc_cat=104&_nc_ohc=hac_cQWtHw4AX83CgcZ&_nc_ht=scontent.fgye8-1.fna&_nc_tp=6&oh=bf5e9b9f5337cee16c83c1b97dc062ae&oe=5EC5AAA3"  width= "1200" height="536"/>
+-->
+              <ng-template   ngbSlide *ngIf="i<3">
+               <div *ngFor="let mensaMedia of mensaje.content_media_info">
 
-              <ng-template ngbSlide *ngIf="i<3">
-                <img
-                  src="https://scontent.fgye8-1.fna.fbcdn.net/v/t1.0-0/p180x540/67834871_10157647021680921_8007173122673344512_o.jpg?_nc_cat=104&_nc_ohc=hac_cQWtHw4AX83CgcZ&_nc_ht=scontent.fgye8-1.fna&_nc_tp=6&oh=bf5e9b9f5337cee16c83c1b97dc062ae&oe=5EC5AAA3" />
+             
+                <img src="{{mensaMedia.path}}" width= "1200" height="536"/>
+
+                </div>
                 <div class="carousel-caption">
                   <h3 class="mb-0 box-evento p-1">{{mensaje.content_info.title}}</h3>
                   <p class="mb-0 box-evento p-1">{{mensaje.content_info.description}}</p>
@@ -95,8 +100,6 @@
 
   </div>
 </div>
-
-
 
 
 <hr class="bg-warning2 w-250">
@@ -229,9 +232,11 @@
 
               <div class="col-md-12" *ngFor=" let testimonios of listTestimonios;  let i=index">
                 <div class="row" *ngIf="i<1">
-                  <div class="col-md-6 px-0">
-                    <div>
-                      <iframe width="570" height="430" src="https://www.youtube.com/embed/sUhJwmuBzp4" frameborder="0"
+                  <div class="col-md-6 px-0" >
+               
+                    <div >
+                     
+                      <iframe width="570" height="300" src="https://www.youtube.com/embed/sUhJwmuBzp4" frameborder="0"
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
 
@@ -254,7 +259,7 @@
                 </div>
               </div>
 
-
+              <br>
 
 
               <div class="col-md-12" *ngFor=" let testimonios of listTestimonios;let i=index">
@@ -270,9 +275,9 @@
                     </div>
                   </div>
 
-                  <div class="col-md-6 px-0">
+                  <div class="col-md-6 px-3">
                     <div>
-                      <iframe width="562" height="435" src="https://www.youtube.com/embed/sUhJwmuBzp4" frameborder="0"
+                      <iframe width="570" height="300" src="https://www.youtube.com/embed/7rUIcb9oN6E" frameborder="0"
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
 

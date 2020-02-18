@@ -6,7 +6,7 @@
 [class*="fontawesome-"]:before {
   font-family: 'FontAwesome', sans-serif;
 }
-
+iframe { border-radius: 10px; } 
 body { font-family: 'PT Sans', sans-serif; }
 
 .bg-primary { background-color: #003F72 !important; }
