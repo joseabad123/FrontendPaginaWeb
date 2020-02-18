@@ -43,7 +43,7 @@ export class PersonsectionComponent implements OnInit {
   }
 
   updateListSection(id:number) {
-    this.sectionService.getSection(id).subscribe(section => {
+    this.sectionService.getSection().subscribe(section => {
       this.listSection = section;
     });
   }

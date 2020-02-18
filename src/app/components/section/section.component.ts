@@ -54,8 +54,8 @@ export class SectionComponent implements OnInit {
 
 
   //All 
-  updateListSection(id:number) {
-    this.sectionService.getSection(id).subscribe(section => {
+  updateListSection() {
+    this.sectionService.getSection().subscribe(section => {
       this.listSection = section;
       this.data= new MatTableDataSource<Section>(this.listSection);
       this.data.paginator=this.paginator;
@@ -70,9 +70,9 @@ export class SectionComponent implements OnInit {
 applyFilter(filterValue: string) {
   this.data.filter = filterValue.trim().toLowerCase();
 }
-  deleteSection(id: number,idCarrer:number) {
+  deleteSection(id: number) {
     this.sectionService.deleteSection(id).subscribe(section => {
-      this.updateListSection(idCarrer);
+      this.updateListSection();
     },
       error => {
         alert(JSON.stringify(error));
@@ -85,7 +85,7 @@ applyFilter(filterValue: string) {
 
   ngOnInit() {
     this.career=parseInt(localStorage.getItem('career'));
-    this.updateListSection(this.career);
+    this.updateListSection();
     this.updateListUniversityC();
   }
 
@@ -122,7 +122,7 @@ applyFilter(filterValue: string) {
     if (this.sectionForm.value.section_id == null) {
       if (this.sectionForm.valid) {
         this.sectionService.createSection(this.sectionForm.value).subscribe(section => {
-          this.updateListSection(idCarrer);
+          this.updateListSection();
         }, error => {
           alert(JSON.stringify(error));
         })
@@ -132,7 +132,7 @@ applyFilter(filterValue: string) {
     else {
       if (this.sectionForm.valid) {
         this.sectionService.updateSection(this.sectionForm.value).subscribe(section => {
-          this.updateListSection(idCarrer);
+          this.updateListSection();
         })
         this.resetForm();
       }
