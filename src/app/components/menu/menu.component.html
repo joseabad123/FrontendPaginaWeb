@@ -9,6 +9,10 @@
                 </mat-form-field>
 
                 <mat-form-field class="w100">
+                  <input matInput formControlName="url" placeholder="Url" autocomplete="off">
+                </mat-form-field>
+
+                <mat-form-field class="w100">
                   <input matInput formControlName="order" placeholder="Orden" autocomplete="off">
                 </mat-form-field>
 
@@ -51,7 +55,7 @@
 
         <ng-container matColumnDef="delete">
           <mat-header-cell *matHeaderCellDef> Eliminar </mat-header-cell>
-          <mat-cell *matCellDef="let menu"><a (click)="deleteMenu(menu.menu_id)"><i
+          <mat-cell *matCellDef="let menu"><a (click)="deleteMenu(menu.menu_item_id)"><i
               class="material-icons">delete</i></a></mat-cell>
         </ng-container>
 

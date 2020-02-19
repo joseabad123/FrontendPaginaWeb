@@ -21,19 +21,19 @@ export class MenuService {
       this.apiUrl = environment.apiUrl;
     }
     public createMenu(menu: Menu) {
-      return this.httpClient.post(this.apiUrl+'menu/', menu, this.httpOptions);
+      return this.httpClient.post(this.apiUrl+'utils/menu_item/', menu, this.httpOptions);
     }
 
     public updateMenu(menu: Menu) {
-      return this.httpClient.put(this.apiUrl+'menu/'+menu.menu_item_id+'/', menu,this.httpOptions);
+      return this.httpClient.put(this.apiUrl+'utils/menu_item/'+menu.menu_item_id+'/', menu,this.httpOptions);
     }
 
     public deleteMenu(id: number) { 
-      return this.httpClient.delete(this.apiUrl+'menu/'+id+'/', this.httpOptions);
+      return this.httpClient.delete(this.apiUrl+'utils/menu_item/'+id+'/', this.httpOptions);
     }
 
     public getMenu() { 
-      return this.httpClient.get<Menu[]>(this.apiUrl+'menu/', this.httpOptions);
+      return this.httpClient.get<Menu[]>(this.apiUrl+'utils/menu_item/', this.httpOptions);
     }
 }
 

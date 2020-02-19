@@ -81,10 +81,10 @@ applyFilter(filterValue: string) {
         Validators.required,
         Validators.maxLength(45)
       ]),
-      order: new FormControl('', [
+      url: new FormControl('', [
         Validators.required,
       ]),
-      url: new FormControl('', [
+      order: new FormControl('', [
         Validators.required,
       ]),
       item_category_id: new FormControl('', [
@@ -108,7 +108,7 @@ applyFilter(filterValue: string) {
 
   //submit form
   submitForm() {
-    if (this.menuForm.value.menu_id == null) {
+    if (this.menuForm.value.menu_item_id == null) {
       if (this.menuForm.valid) {
         this.menuService.createMenu(this.menuForm.value).subscribe(menu => {
           this.updateListMenu();

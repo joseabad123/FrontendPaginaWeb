@@ -1,7 +1,7 @@
 <mat-toolbar id="mainToolbar" color="primary">
 
   <mat-icon (click)="onToolbarMenuToggle()" id="toolbarMenu">subject</mat-icon>
-  Administración - UTPL
+  Administración - Gestión Contenidos
   <span class="toolbar-spacer"></span>
 
   <button mat-fab [matMenuTriggerFor]="menu" color="warn">
@@ -150,35 +150,37 @@
 
         </button>
       </mat-list-item>
-      <!--Carrera Universitaria-->
+      <!--Carrera Universitaria
       <mat-list-item *ngIf="is_SuperAdmin ||is_Admin">
         <button class="menu-item" mat-flat-button routerLink="universityCareer">
           <mat-icon>menu_book</mat-icon>
           Carrera Universitaria
         </button>
       </mat-list-item>
-      <!--Periodo Academico-->
+      <!-Periodo Academico
       <mat-list-item *ngIf="is_SuperAdmin ||is_Admin">
         <button class="menu-item" mat-flat-button routerLink="academicPeriod">
           <mat-icon>device_hub</mat-icon>
           Periodo Academico
         </button>
       </mat-list-item>
-<!-- Tipo de Contacto-->
+<!- Tipo de Contacto
 <mat-list-item *ngIf="is_SuperAdmin ||is_Admin">
     <button class="menu-item" mat-flat-button routerLink="type-contact">
       <mat-icon>import_contacts</mat-icon>
       Tipo de Contacto
     </button>
   </mat-list-item>
-  <!-- Tipo de Contenido-->
+  Tipo de Contenido
   <mat-list-item *ngIf="is_SuperAdmin ||is_Admin">
       <button class="menu-item" mat-flat-button routerLink="content-type">
         <mat-icon>dynamic_feed</mat-icon>
         Tipo de Contenido
       </button>
-      <!-- User-->
+      
     </mat-list-item>
+  -->
+      <!-- User-->
       <mat-list-item *ngIf="is_SuperAdmin ||is_Admin">
         <button class="menu-item" mat-flat-button routerLink="user">
           <mat-icon>supervised_user_circle</mat-icon>
