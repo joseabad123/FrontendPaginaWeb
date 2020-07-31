@@ -12,7 +12,7 @@ export class AdministracionComponent implements OnInit {
 public is_SuperAdmin :boolean;
 
 public is_Admin:boolean;
-  constructor(private authService:AuthService, private router: Router,private userService:UserCService) { }
+  constructor(private authService:AuthService, private router: Router, private userService:UserCService) { }
 
 
   ngOnInit() {
@@ -45,7 +45,7 @@ public is_Admin:boolean;
 logout(){
   localStorage.removeItem('ACCESS_TOKEN');
   localStorage.removeItem('currentUser');
-  this.router.navigateByUrl('/Sitemas');
+  this.router.navigateByUrl('/sistemas');
  
 }
 
