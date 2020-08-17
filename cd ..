@@ -1,0 +1,64 @@
+* [33m9fc1f0d0[m[33m ([m[1;36mHEAD -> [m[1;32mdev[m[33m, [m[1;32mmaster[m[33m)[m arreglos en app
+* [33m2721712e[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m mejoras en frontpage
+[31m|[m * [33m24fc4e56[m[33m ([m[1;31morigin/dependabot/npm_and_yarn/lodash-4.17.19[m[33m)[m Bump lodash from 4.17.11 to 4.17.19
+[31m|[m[31m/[m  
+[31m|[m * [33m961c9a7e[m[33m ([m[1;31morigin/dependabot/npm_and_yarn/websocket-extensions-0.1.4[m[33m)[m Bump websocket-extensions from 0.1.3 to 0.1.4
+[31m|[m[31m/[m  
+[31m|[m * [33mf4126eeb[m[33m ([m[1;31morigin/dependabot/npm_and_yarn/handlebars-4.7.6[m[33m)[m Bump handlebars from 4.1.1 to 4.7.6
+[31m|[m[31m/[m  
+[31m|[m * [33mb0972d2b[m[33m ([m[1;31morigin/dependabot/npm_and_yarn/https-proxy-agent-2.2.4[m[33m)[m Bump https-proxy-agent from 2.2.1 to 2.2.4
+[31m|[m[31m/[m  
+[31m|[m * [33m93231cff[m[33m ([m[1;31morigin/dependabot/npm_and_yarn/mixin-deep-1.3.2[m[33m)[m Bump mixin-deep from 1.3.1 to 1.3.2
+[31m|[m[31m/[m  
+[31m|[m * [33ma3c360fc[m[33m ([m[1;31morigin/dependabot/npm_and_yarn/acorn-6.4.1[m[33m)[m Bump acorn from 6.1.1 to 6.4.1
+[31m|[m[31m/[m  
+[31m|[m * [33mcd968508[m[33m ([m[1;31morigin/dependabot/npm_and_yarn/lodash.mergewith-4.6.2[m[33m)[m Bump lodash.mergewith from 4.6.1 to 4.6.2
+[31m|[m[31m/[m  
+* [33mf3e59e03[m Cambios finales xfinnn
+* [33mb867a94e[m Testimonios y imagenes carrusel
+* [33mbde950f1[m Crud arreglado
+* [33mfeea4575[m Bordes a sections
+* [33m3ddaf046[m Cambios nocticias propio
+* [33m5f09dc72[m Nuevos textos
+* [33m9857bd31[m Menu conectado al servicio
+* [33m17c1a821[m Estilos Malla
+* [33mf5545bea[m Nuevos cambios tamanios de imagenes
+* [33m9d9002f9[m Nuevos servicios
+* [33m728b92bf[m Anclas Funcionando
+* [33m3b65daf7[m SUbiendo cambios frotpage menu
+* [33m22553db0[m implentacion id career en administracion
+*   [33m4efcad09[m Malla curricular funcionando
+[1;33m|[m[1;34m\[m  
+[1;33m|[m * [33md7e5fb31[m malla
+* [1;34m|[m [33m29d551a9[m cambios malla
+[1;34m|[m[1;34m/[m  
+* [33m3b331cc6[m Mensaje de Bienvenida,Secciones,MenuRevisandolo,Autoridades
+* [33m37a3814e[m Obtencion Id Carrera
+* [33m5da3c6a5[m Cambios
+* [33m13608bb3[m Filtrado, servicios Utils
+* [33md6a6b70b[m Logueo arreglado
+* [33m4018788f[m Implentacions de urls en los CRUD's de filtrado
+* [33mb012b800[m Footer frontpage
+* [33md978e938[m Nuevos Cruds
+* [33m64bef442[m LOgin contraseña incorrecta
+*   [33m838010f0[m Cambios Roles
+[1;35m|[m[1;36m\[m  
+[1;35m|[m * [33m47f67b2b[m Cruds probados v2
+* [1;36m|[m [33mccb23ea9[m Recibiendo cambios corregidos
+[1;36m|[m[1;36m/[m  
+* [33m59d576b7[m Malla css y Authorization para cruds
+* [33m6ae2b573[m Subiendo cambios roles
+* [33m574c2ec5[m Tokens funcionando
+*   [33m02931cdb[m Reciendo Cambios Nuevos
+[31m|[m[32m\[m  
+[31m|[m * [33ma1d1ec93[m Conexion a AWS
+* [32m|[m [33mdf21dc77[m Conectando con el Sevido y trabajo malla
+* [32m|[m   [33m8d765302[m Reciendo Cambios
+[33m|[m[32m\[m [32m\[m  
+[33m|[m [32m|[m[32m/[m  
+[33m|[m * [33mfc4977f7[m Cambios en los cruds v1
+* [34m|[m [33m06a01710[m Reciendo Cambios
+[34m|[m[34m/[m  
+* [33mdcb69ee4[m CLonacion Proyecto
+* [33m0f87b4ba[m CLonacion Poryecto
+* [33me5c701ab[m Cambios iniciales
